@@ -24,3 +24,4 @@ async def create_item(item_id: int, item: str):
 @app.get("/rashed")
 async def read_item():
     return {"Rashed"}
+
