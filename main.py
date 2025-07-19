@@ -21,7 +21,3 @@ async def read_item(item_id: int):
 async def create_item(item_id: int, item: str):
     return {"item_id": item_id, "item": item}
 
-@app.get("/rashed")
-async def read_item():
-    return {"Rashed"}
-
