@@ -20,3 +20,7 @@ async def read_item(item_id: int):
 @app.post("/items/{item_id}")
 async def create_item(item_id: int, item: str):
     return {"item_id": item_id, "item": item}
+
+@app.get("/rashed")
+async def read_item(item_id: int, q: str = None):
+    return "Rashed"
